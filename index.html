@@ -9,48 +9,49 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
     <title>The Crystal Game</title>
 </head>
 
 <body background="assets/images/bluecave.jpg"></body>
-    <header class="row">
-        <h1 id="crysHead">The Crystal Collector</h1>
-    </header>
-    <div class="container">
-        <div class="row" id="instructions">
-            <div class="col-md-12">
+<header class="row">
+    <h1 id="crysHead">The Crystal Collector</h1>
+</header>
+<div class="container">
+    <div class="row" id="instructions">
+        <div class="col-md-12">
             <p>
-            <ul>
-                <li>Click on a crystal to add its worth to your number on the left</li>
-                <li>Try to make your number equal to the computer's number on the left</li>
-                <li>If you make a number greater than the computer's number - you lose</li>
-                <li>If you make your number match the computer's number - you WIN!</li>
-                <li>Now give it a go!</li>
-            </ul>
-            </p>  
-            </div>  
-        </div>
-        <div class="row dataRow">
-            <div class="col-md-4" id="yourNumber">0</div>
-            <div class="col-md-4" id="winLossCol">
-                <div class="row" id="winDisplay">0</div>
-                <div class="row" id="lossDisplay">0</div>
-            </div>
-            <div class="col-md-4" id="pcNumber">0</div>
-        </div>
-        <div class="row">
-            <div class="col-md-4" id="crystalOne">
-                <img id="pepsi" src="assets/images/crystalPepsi.jpg" alt="Picture of a bottle of Crystal Pepsi">
-            </div>
-            <div class="col-md-4" id="crystalTwo">
-                <img id="billy" src="assets/images/billyCrystal.jpg" alt="Headshot of actor, Billy Crystal">
-            </div>
-            <div class="col-md-4" id="crystalThree">
-                <img id="light" src="assets/images/crystalLight.jpg" alt="Picture of Crystal Light drink mix">
-            </div>
+                <ul>
+                    <li>Click on a crystal to add its worth to your number on the left</li>
+                    <li>Try to make your number equal to the computer's number on the right</li>
+                    <li>If you make a number greater than the computer's number - you lose</li>
+                    <li>If you make your number match the computer's number - you WIN!</li>
+                    <li>Now give it a go!</li>
+                </ul>
+            </p>
         </div>
     </div>
+    <div class="row dataRow">
+        <div class="col-md-4" id="yourNumber">0</div>
+        <div class="col-md-4" id="winLossCol">
+            <div class="row" id="winDisplay">Wins: 0</div>
+            <div class="row" id="lossDisplay">Losses: 0</div>
+        </div>
+        <div class="col-md-4" id="pcNumber">0</div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 crystal" id="crystalOne" value="1">
+            <img id="pepsi" src="assets/images/crystalPepsi.jpg" alt="Picture of a bottle of Crystal Pepsi">
+        </div>
+        <div class="col-md-4 crystal" id="crystalTwo" value="2">
+            <img id="billy" src="assets/images/billyCrystal.jpg" alt="Headshot of actor, Billy Crystal">
+        </div>
+        <div class="col-md-4 crystal" id="crystalThree" value="3">
+            <img id="light" src="assets/images/crystalLight.jpg" alt="Picture of Crystal Light drink mix">
+        </div>
+    </div>
+</div>
 
 
 </body>
