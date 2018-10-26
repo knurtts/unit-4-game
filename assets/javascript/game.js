@@ -21,13 +21,23 @@ $(document).ready(function () {
                 alert("You win!");
                 $("#winDisplay").text("Wins: " + wins);
                 youNum = 0;
+                cryOne = (Math.floor(Math.random() * 12) + 1);
+                cryTwo = (Math.floor(Math.random() * 12) + 1);
+                cryThree = (Math.floor(Math.random() * 12) + 1);
+                pcNum = (Math.floor(Math.random() * 120) + 19);
                 $("#yourNumber").text(youNum);
+                $("#pcNumber").text(pcNum);
             } else if (youNum > pcNum) {
                 losses++;
                 alert("You loose!");
                 $("#lossDisplay").text("Losses: " + losses);
                 youNum = 0;
+                cryOne = (Math.floor(Math.random() * 12) + 1);
+                cryTwo = (Math.floor(Math.random() * 12) + 1);
+                cryThree = (Math.floor(Math.random() * 12) + 1);
+                pcNum = (Math.floor(Math.random() * 120) + 19);
                 $("#yourNumber").text(youNum);
+                $("#pcNumber").text(pcNum);
             }
         }
 
@@ -42,12 +52,4 @@ $(document).ready(function () {
             evaluateWin();
         }
     });
-    
-
-    console.log("PC Number: " + pcNum);
-    console.log("Pepsi: " + cryOne);
-    console.log("Billy: " + cryTwo);
-    console.log("Ligt: " + cryThree);
-
-
 });
